@@ -1,0 +1,18 @@
+create table if not exists donwnstream_impact_notification(
+source_application varchar(255) not null,
+health_check char null,
+downstream_code Integer null,
+target_application_name varchar(255) null,
+is_email_mode varchar(255) null,
+is_screen_mode Integer null,
+screen_url varchar(255) null,
+screen_credentials varchar(255) null,
+max_email_count Integer null,
+mail_to varchar(255) null,
+mail_cc varchar(255) null,
+mail_bcc varchar(255) null,
+impact_analysis varchar(255) null,
+root_cause_tracker varchar(255) null,
+entity_state varchar(255) null,
+remarks varchar(255) null,
+constraint donwnstream_impact_notification_pk primary key(source_application));

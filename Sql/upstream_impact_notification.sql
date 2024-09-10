@@ -1,0 +1,15 @@
+create table if not exists upstream_impact_notification(
+notification_type varchar(255) not null,
+source_application varchar(255) null,
+health_check char null,
+upstream_code Integer null,
+target_application_name varchar(255) null,
+is_email_mode varchar(255) null,
+is_screen_mode Integer null,
+screen_url varchar(255) null,
+screen_credentials varchar(255) null,
+max_email_count Integer null,
+mail_to varchar(255) null,
+mail_cc varchar(255) null,
+mail_bcc varchar(255) null,
+constraint upstream_impact_notification_pk primary key(notification_type));
